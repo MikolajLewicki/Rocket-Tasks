@@ -1,0 +1,90 @@
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    .screen{
+        width: 100%;
+        height: 800px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .top{
+            width: 100%;
+            height: 400px;
+            background-image: url('../../../assets/beak.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .bottom{
+            width: 100%;
+            height: 400px;
+            background-color: #C1BDDB;
+        }
+        .img{
+            position: absolute;
+            top: 100px;
+            height: 750px;
+            width: 70%;
+            
+        }
+    }
+    .descriptionsContainer{
+        width: 100%;
+        padding: 2.5% 20% 5%;
+        background-color: #C1BDDB;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .descriptionCard{
+            width: 30%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            transition: .3s;
+            padding-bottom: 10px;
+            border-bottom: solid 4px gray;
+            .title{
+                color: white;
+                font-size: 32px;
+                font-weight: bold;
+                transition: .3s;
+
+            }
+            .description{
+                margin-top: 20px;
+                color: black;
+                font-weight: medium;
+            }
+            &:hover{
+                border-bottom: solid 4px white;
+                .title{
+                    color: white !important;
+                }
+                .description{
+                    color: black !important;
+                }
+            }
+        }
+    }
+    .bottomBreak{
+        width: 100%;
+        height: 400px;
+        background-image: url('../../../assets/beak.png');
+        background-size: cover;
+        transform: rotate(180deg);
+        background-position: center;
+    }
+}
+
+@media (max-width: 1500px) {
+   .wrapper{
+    .descriptionsContainer{
+        .descriptionCard{
+            width: 30%;
+        }
+    }
+   } 
+}

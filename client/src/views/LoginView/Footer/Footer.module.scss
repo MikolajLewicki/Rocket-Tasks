@@ -1,0 +1,60 @@
+.wrapper{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    .break{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 400px;
+        background-image: url('../../../assets/beak.png');
+        background-size: cover;
+        background-position: center;
+    }
+    .contentContainer{
+        height: 200px;
+        position: absolute;
+        top: 400px;
+        left: 0;
+        width: 100%;
+        background-color: #C1BDDB;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10%;
+        .left{
+            width: 30%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            .iconContainer{
+                width: 75px;
+                height: 75px;
+                border-radius: 75px;
+                background-color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                .icon{
+                    color: #C1BDDB;
+                    font-size: 2rem;
+                }
+            }
+        }
+        .right{
+            text-align: center;
+
+            p{
+                color: white;
+                text-decoration: none;
+                font-size: 1.2rem;
+            }
+        }
+        
+    }
+}
